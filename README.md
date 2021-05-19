@@ -31,13 +31,14 @@ Flask JS/ LightWeightCharts
 
 Picture above will update a new candle live and close the candle when the specified ticker that is set time expires.
 
-## TBA / WIP
-### Releasing generic public TA Lib examples by EOW.
-
-### Trade functionalities are currently excluded from public version.
-### Trade indicators and studies are performed by https://github.com/mrjbq7/ta-lib/blob/master/README.md in addition to personal configurations.
-
-### Generic trade functionality examples will be provided May 24th.
+## TBA / Notes / Work in Progress
 
 
 
+1. Trade functionalities are currently excluded from public version.
+2. Trade indicators and studies are performed by https://github.com/mrjbq7/ta-lib/blob/master/README.md in addition to personal configurations.
+
+2. Releasing generic public TA Lib examples by EOW.
+3. Generic trade functionality examples will be provided May 24th.
+4. Uploading different graph models with included technical analasys indicators on current plots.
+5. Releasing some research behind TA Lib correlations.
