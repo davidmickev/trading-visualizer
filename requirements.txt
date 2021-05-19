@@ -1,0 +1,15 @@
+# windows cmd/powershell: 
+# > python3 -m pip install -r requirements.txt
+# > pip install -r requirements.txt
+pandas
+requests
+plotly
+wheel
+websocket
+websocket-client
+flask
+Jinja2
+dash
+python-binance
+# trading bot not open to public yet
+TA-Lib
