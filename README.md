@@ -37,8 +37,7 @@ Picture above will update a new candle live and close the candle when the specif
 
 1. Trade functionalities are currently excluded from public version.
 2. Trade indicators and studies are performed by https://github.com/mrjbq7/ta-lib/blob/master/README.md in addition to personal configurations.
-
-2. Releasing generic public TA Lib examples by EOW.
-3. Generic trade functionality examples will be provided May 24th.
-4. Uploading different graph models with included technical analasys indicators on current plots.
-5. Releasing some research behind TA Lib correlations.
+3. Releasing generic public TA Lib examples by May EOM.
+4. Generic trade functionality examples will be provided May EOM.
+5. Uploading different graph models with included technical analasys indicators on current plots.
+6. Releasing some research behind TA Lib correlations.
