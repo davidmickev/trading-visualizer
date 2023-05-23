@@ -11,5 +11,10 @@ flask
 Jinja2
 dash
 python-binance
-# trading bot not open to public yet
 TA-Lib
+flask-cors
+
+#if any dependencies fail on windows: use pip install --user python-binance || pip install --user "library-name"
+
+
+# trading bot not open to public yet

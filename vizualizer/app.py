@@ -7,7 +7,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-client = Client(config.API_KEY, config.API_SECRET, tld='us')
+client = Client(config.API_KEY, config.API_SECRET)
 
 # CMD W10: 
 # > set FLASK_APP=backend.py
@@ -30,7 +30,7 @@ def index():
 @app.route('/history')
 def history():
     # https://python-binance.readthedocs.io/en/latest/market_data.html
-    candlesticks = client.get_historical_klines("ETHUSDT", Client.KLINE_INTERVAL_30MINUTE, "May 17, 2021, UTC")
+    candlesticks = client.get_historical_klines("ETHUSDT", Client.KLINE_INTERVAL_30MINUTE, "May 17, 2023, UTC")
 
     processed_candlesticks = []
 

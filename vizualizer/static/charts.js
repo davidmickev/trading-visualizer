@@ -1,3 +1,5 @@
+import React, { useEffect, useRef } from 'react';
+
 var chart = LightweightCharts.createChart(document.getElementById('charts'), {
 	width: screen.width/1.25,
   	height: 500,
@@ -44,7 +46,7 @@ fetch('http://localhost:5000/history')
 	})
 
 
-var binanceSocket = new WebSocket("wss://stream.binance.com:9443/ws/ethusdt@kline_30m");
+var binanceSocket = new WebSocket("wss://stream.binance.us:9443/ws/ethusdt@kline_1m");
 
 binanceSocket.onmessage = function (event) {	
 	var message = JSON.parse(event.data);
