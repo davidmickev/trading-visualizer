@@ -46,7 +46,9 @@ fetch('http://localhost:5000/history')
 	})
 
 
-var binanceSocket = new WebSocket("wss://stream.binance.us:9443/ws/ethusdt@kline_1m");
+var binanceSocket = new WebSocket("wss://stream.binance.us:9443/ws/ethusdt@kline_5m");
+//
+//wss://stream.binance.us:9443/ws/ethusdt@kline_1m
 
 binanceSocket.onmessage = function (event) {	
 	var message = JSON.parse(event.data);

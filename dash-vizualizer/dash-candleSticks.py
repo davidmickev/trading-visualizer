@@ -69,6 +69,7 @@ app.layout = html.Div(
 # def layout(self):
 #     return html.Div()
 
+
 def update_graph_scatter(n):
     fig = plot.Figure(data=[plot.Candlestick(
         x=df['Open time'],
@@ -79,6 +80,7 @@ def update_graph_scatter(n):
     
     fig.update_layout(autosize=True,height=1000)
     return fig
+
 SOCKET = "wss://stream.binance.us:9443/ws/ethusdt@kline_1m"
 def on_open(ws):
     print('opened connection')

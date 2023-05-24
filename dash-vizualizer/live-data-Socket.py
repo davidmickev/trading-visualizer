@@ -49,6 +49,5 @@ def on_message(ws, message):
     df = pd.DataFrame.from_dict(json_message)
 
 if __name__ == '__main__':
-    
     #websocket.enableTrace(True)
     ws = websocket.WebSocketApp(SOCKET, on_open=on_open, on_close=on_close, on_error = on_error, on_message=on_message)

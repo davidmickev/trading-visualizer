@@ -4,10 +4,13 @@ from binance.client import Client
 from binance.enums import *
 from flask_cors import CORS
 
+
+
+
 app = Flask(__name__)
 CORS(app)
 
-client = Client(config.API_KEY, config.API_SECRET)
+client = Client(config.API_KEY, config.API_SECRET,tld='us')
 
 # CMD W10: 
 # > set FLASK_APP=backend.py
@@ -30,7 +33,7 @@ def index():
 @app.route('/history')
 def history():
     # https://python-binance.readthedocs.io/en/latest/market_data.html
-    candlesticks = client.get_historical_klines("ETHUSDT", Client.KLINE_INTERVAL_30MINUTE, "May 17, 2023, UTC")
+    candlesticks = client.get_historical_klines("ETHUSDT", Client.KLINE_INTERVAL_5MINUTE, "May 17, 2023, UTC")
 
     processed_candlesticks = []
 
@@ -55,3 +58,7 @@ def buy():
 @app.route('/sell')
 def sell():
     return 'sell'
+
+## Can add this to run locally without flask 
+if __name__ == "__main__":
+    app.run() 
